@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background: radial-gradient(#444, #111);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#score {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #fff;
+  font-size: 20px;
+  z-index: 10;
+}
+
+#startScreen {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 20px 40px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+#gameArea {
+  width: 400px;
+  height: 600px;
+  margin: auto;
+  position: relative;
+  background: #555;
+  overflow: hidden;
+  border: 2px solid #fff;
+  background-image: linear-gradient(#666, #333);
+}
+
+.hide {
+  display: none;
+}
+
+.car {
+  position: absolute;
+  width: 50px;
+  height: 100px;
+  border-radius: 5px;
+  background: linear-gradient(#ff4d4d, #b30000);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.enemy {
+  background: linear-gradient(#4d4dff, #0000b3);
+}
+
+.line {
+  position: absolute;
+  width: 10px;
+  height: 100px;
+  background: #fff;
+  left: 195px;
+  opacity: 0.7;
+}
